@@ -1,7 +1,14 @@
 language: java
 
+sudo: false
+
 jdk:
   - oraclejdk8
+
+matrix:
+  include:
+  - os: linux-ppc64le
+    jdk: openjdk8
 
 cache:
   directories:
